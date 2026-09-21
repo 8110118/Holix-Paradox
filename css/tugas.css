@@ -1,0 +1,98 @@
+.psv1, .psv2, .psv3, .psv4, .psv5 {
+    font-size: 1.2rem;
+}
+
+.update1 > .card-update > .update-photo, .update1 > .card-update > .update-stats > a{
+    background: #b4ff3c;
+}
+.update1 > .card-update > .update-photo > .update-avatar {
+    color: #b4ff3c;
+}
+.update1 > .card-update > .update-body > .update-bio {
+    border-left: 5px solid #b4ff3c;
+}
+.update1 > .card-update > .update-stats > a.pstat {
+    color: #000;
+}
+.update1 > .card-update > .update-stats > a.pstat:hover {
+    background-color: #000;
+}
+.update1 > .card-update > .update-stats > a.pstat:hover {
+    color: #b4ff3c;
+}
+
+.update2 > .card-update > .update-photo, .update2 > .card-update > .update-stats > a{
+    background: #00ff55;
+}
+.update2 > .card-update > .update-photo > .update-avatar {
+    color: #00ff55;
+}
+.update2 > .card-update > .update-body > .update-bio {
+    border-left: 5px solid #00ff55;
+}
+.update2 > .card-update > .update-stats > a.pstat {
+    color: #000;
+}
+.update2 > .card-update > .update-stats > a.pstat:hover {
+    background-color: #000;
+}
+.update2 > .card-update > .update-stats > a.pstat:hover {
+    color: #00ff55;
+}
+
+.update3 > .card-update > .update-photo, .update3 > .card-update > .update-stats > a{
+    background: #2de7d8;
+}
+.update3 > .card-update > .update-photo > .update-avatar {
+    color: #2de7d8;
+}
+.update3 > .card-update > .update-body > .update-bio {
+    border-left: 5px solid #2de7d8;
+}
+.update3 > .card-update > .update-stats > a.pstat {
+    color: #000;
+}
+.update3 > .card-update > .update-stats > a.pstat:hover {
+    background-color: #000;
+}
+.update3 > .card-update > .update-stats > a.pstat:hover {
+    color: #2de7d8;
+}
+
+.update4 > .card-update > .update-photo, .update4 > .card-update > .update-stats > a{
+    background: #2d8de7;
+}
+.update4 > .card-update > .update-photo > .update-avatar {
+    color: #2d8de7;
+}
+.update4 > .card-update > .update-body > .update-bio {
+    border-left: 5px solid #2d8de7;
+}
+.update4 > .card-update > .update-stats > a.pstat {
+    color: #000;
+}
+.update4 > .card-update > .update-stats > a.pstat:hover {
+    background-color: #000;
+}
+.update4 > .card-update > .update-stats > a.pstat:hover {
+    color: #2d8de7;
+}
+
+.update5 > .card-update > .update-photo, .update5 > .card-update > .update-stats > a{
+    background: #7e2de7;
+}
+.update5 > .card-update > .update-photo > .update-avatar {
+    color: #7e2de7;
+}
+.update5 > .card-update > .update-body > .update-bio {
+    border-left: 5px solid #7e2de7;
+}
+.update5 > .card-update > .update-stats > a.pstat {
+    color: #000;
+}
+.update5 > .card-update > .update-stats > a.pstat:hover {
+    background-color: #000;
+}
+.update5 > .card-update > .update-stats > a.pstat:hover {
+    color: #7e2de7;
+}
