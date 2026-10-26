@@ -139,6 +139,13 @@ ul.navbar-list li a:active {
     overflow: hidden;
     transition: all 0.3s ease;
 }
+.pilah-sampah > .card {
+    background: rgb(68, 255, 68);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 0.5em 0.5em;
+    color: #000;
+}
 .dysvotepia > .card {
     background: #ff204e;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
@@ -175,6 +182,14 @@ ul.navbar-list li a:active {
 .memorale > .card > .content > .text-button-card > button {
     color: #000;
     background: #ffc368;
+}
+
+.pilah-sampah > .card > .content > .text-button-card > button {
+    color: #000;
+    background: rgb(68, 255, 68);
+}
+.pilah-sampah > .card > .content > .text-button-card > button > a {
+    text-decoration: none ;
 }
 
 .head {
@@ -217,7 +232,7 @@ ul.navbar-list li a:active {
 }
 
 .text-button-card h1 {
-    font-size: 1.5 rem;
+    font-size: 1.5rem;
     margin-bottom: 8px;
 }
 .game-image-card {
@@ -275,6 +290,11 @@ ul.navbar-list li a:active {
 .a-quite-drive > .card > .content > .text-button-card > button:hover {
     background: #000000;
     color: #1a6aff;
+}
+
+.pilah-sampah > .card > .content > .text-button-card > button:hover {
+    background: #000000;
+    color: rgb(68, 255, 68);
 }
 
 .card:hover {
@@ -497,9 +517,9 @@ a.pstat:hover .psv {
     border-left: 5px solid #ffc368;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .banner {
-        padding:80px 12px 10px 12px;
+        padding:80px 12px 64px 12px;
     }
 
     .banner img {
@@ -543,10 +563,35 @@ a.pstat:hover .psv {
     }
 
     .card {
-        width: 92% !important;
+        width: 82% !important;
+        height: auto;
+        margin: 16px auto;
+        max-height: 442px;
+    }
+
+    .content {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+
+    .text-button-card {
+        padding: 20px;
+        order: 2;
+    }
+
+    .game-image-card {
+        height: 200px;
+        max-height: 227px;
+        width: 100%;
+        border-left: none;
+        border-bottom: 3px solid #000000;
+        box-shadow: 0 4px 0 #000;
+        order: 1;
     }
 
     .card-update {
         width: 92%;
+        transform: scale(1);
     }
 }
