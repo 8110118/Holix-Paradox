@@ -120,6 +120,18 @@ ul.navbar-list li a:active {
     font-size: 1.5rem;
     margin-top: 24px;
 }
+
+.grid-game-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+.grid-game-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
 .card-header-text {
     text-align: left;
     margin: 0;
@@ -129,7 +141,7 @@ ul.navbar-list li a:active {
 
 .card {
     font-family: cascadia code New, cascadia code, monospace;
-    width: 60%;
+    width: 100%;
     height: 250px;
     margin: 32px auto;
     translate: -6px -6px;
@@ -519,12 +531,12 @@ a.pstat:hover .psv {
 
 @media (max-width: 650px) {
     .banner {
-        padding:80px 12px 64px 12px;
+        padding:80px 12px 32px 12px;
     }
 
     .banner img {
         width: 80% !important;
-        max-width: 260px !important;  
+        max-width: 320px !important;  
     }
 
     .text-slogan {
@@ -561,11 +573,25 @@ a.pstat:hover .psv {
         font-weight: 700 !important;
         text-align: center;
     }
-
+    .grid-game-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .grid-game-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
     .card {
         width: 82% !important;
         height: auto;
-        margin: 48px auto;
+        margin: 24px auto;
         max-height: 442px;
     }
 
