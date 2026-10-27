@@ -92,7 +92,7 @@ ul.navbar-list li a {
     display: inline-block;
     padding: 6px 14px;
     text-decoration: none;
-    font-family: "OCR A Extended", monospace;
+    font-family: "Cascadia Code", monospace;
     font-size: 0.9rem;
     font-weight: 600;
     color: #fff;
@@ -117,7 +117,7 @@ ul.navbar-list li a:active {
 }
 
 .future {
-    font-family: "OCR A Extended", monospace;
+    font-family: "Cascadia Code", monospace;
     font-size: 1.5rem;
     margin-top: 24px;
 }
