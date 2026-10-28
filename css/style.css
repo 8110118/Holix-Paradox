@@ -119,7 +119,8 @@ ul.navbar-list li a:active {
 .future {
     font-family: "Cascadia Code", monospace;
     font-size: 1.5rem;
-    margin-top: 24px;
+    margin-top: 64px;
+    margin-bottom: 12px;
 }
 
 .grid-game-1 {
@@ -142,7 +143,7 @@ ul.navbar-list li a:active {
 
 .card {
     font-family: Cascadia code;
-    width: 100%;
+    width: 475px;
     height: 280px;
     margin: 32px auto;
     translate: -6px -6px;
