@@ -183,27 +183,36 @@ ul.navbar-list li a:active {
     color: #ffffff;
 }
 
-.a-quite-drive > .card > .content > .text-button-card > button {
+.a-quite-drive > .card > .content > .text-button-card > .button {
     color: #ffffff;
     background: #1a6aff;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 400;
 }
 
-.dysvotepia > .card > .content > .text-button-card > button {
+.dysvotepia > .card > .content > .text-button-card > .button {
     color: #ffffff;
     background: #ff204e;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 400;
 }
 
-.memorale > .card > .content > .text-button-card > button {
+.memorale > .card > .content > .text-button-card > .button {
     color: #000;
     background: #ffc368;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 400;
 }
 
-.pilah-sampah > .card > .content > .text-button-card > button {
+.pilah-sampah > .card > .content > .text-button-card > .button {
     color: #000;
     background: rgb(68, 255, 68);
-}
-.pilah-sampah > .card > .content > .text-button-card > button > a {
-    text-decoration: none ;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: 400;
 }
 
 .head {
@@ -241,6 +250,7 @@ ul.navbar-list li a:active {
 .subtext-pilah-sampah {
     color: rgb(35, 128, 35);
     font-size: 14px;
+    font-weight: 400;
 }
 
 .genre-dysvotepia {
@@ -250,6 +260,7 @@ ul.navbar-list li a:active {
 .subtext-dysvotepia {
     color: #ffc6d1;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .genre-memorale {
@@ -259,6 +270,7 @@ ul.navbar-list li a:active {
 .subtext-memorale {
     color: #886839;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .genre-a-quite-drive {
@@ -268,6 +280,7 @@ ul.navbar-list li a:active {
 .subtext-a-quite-drive {
     color: #8ab3ff;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .text-button-card {
@@ -313,6 +326,7 @@ ul.navbar-list li a:active {
     background: #ffffff;
     transition: all 0.3s ease;
     cursor: pointer;
+    margin-top: 12px;
 }
 
 .button:hover {
@@ -326,24 +340,32 @@ ul.navbar-list li a:active {
     box-shadow: 0 0 0 #000000;
 }
 
-.dysvotepia > .card > .content > .text-button-card > button:hover {
+.dysvotepia > .card > .content > .text-button-card > .button:hover {
     background: #000000;
     color: #ff204e;
+    font-weight: 600;
 }
 
-.memorale > .card > .content > .text-button-card > button:hover {
+.memorale > .card > .content > .text-button-card > .button:hover {
     background: #000000;
     color: #ffc368;
+    font-weight: 600;
 }
 
-.a-quite-drive > .card > .content > .text-button-card > button:hover {
+.a-quite-drive > .card > .content > .text-button-card > .button:hover {
     background: #000000;
     color: #1a6aff;
+    font-weight: 600;
 }
 
-.pilah-sampah > .card > .content > .text-button-card > button:hover {
+.pilah-sampah > .card > .content > .text-button-card > .button:hover {
     background: #000000;
     color: rgb(68, 255, 68);
+    font-weight: 600;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 .card:hover {
@@ -627,9 +649,8 @@ a.pstat:hover .psv {
     }
     .card {
         width: 60% !important;
-        height: auto;
+        height: 480px;
         margin: 24px auto;
-        max-height: 480px;
     }
 
     .content {
@@ -646,6 +667,7 @@ a.pstat:hover .psv {
     .game-image-card {
         height: 180px;
         max-height: 227px;
+        aspect-ratio: 1 / 1;
         width: 100%;
         border-left: none;
         border-bottom: 3px solid #000000;
@@ -747,8 +769,7 @@ a.pstat:hover .psv {
     text-transform: uppercase;
 }
 
-.input__search:hover,
-.input__search:focus {
+.input__search:hover, .input__search:focus {
     background: #f0f0f0;
     transform: translateZ(20px) translateX(-5px) translateY(-5px);
     box-shadow: 5px 5px 0 0 #000;
