@@ -122,16 +122,22 @@ ul.navbar-list li a:active {
     margin-top: 64px;
     margin-bottom: 12px;
 }
+.main-game {
+    display: inline-flex;
+    flex-direction: row;
+    margin-bottom: 64px;
+    width: 1000px;
+}
 
 .grid-game-1 {
     display: inline-flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 38px;
 }
 .grid-game-2 {
     display: inline-flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 38px;
 }
 
 .card-header-text {
@@ -223,6 +229,10 @@ ul.navbar-list li a:active {
     align-items: flex-start;
     justify-content: center;
     padding-left: 24px;
+}
+
+.natura-paradox > .card > .content > .text-button-card {
+    padding-left: 48px;
 }
 
 .text-button-card h1 {
@@ -505,6 +515,119 @@ a.pstat:hover .psv {
 
 @media (max-width: 1080px) {
     .banner {
+        padding: 80px 16px 16px 16px;
+    }
+
+    .banner img {
+        width: 90% !important;
+        max-width: 420px !important;  
+    }
+
+    .text-slogan {
+        font-size: 0.8rem !important; 
+        line-height: 1.4;
+    }
+
+    .navbar-container {
+        width: 100%;
+        max-width: 100% !important;
+        min-width: unset !important;
+        padding: 0 !important;
+        margin: 0 auto;
+    }
+
+    ul.navbar-list {
+        width: 100% !important;
+        display: flex !important;
+        box-shadow: 4px 4px 0 #000000 !important;
+    }
+
+    ul.navbar-list li {
+        flex: 1 !important;
+    }
+
+    ul.navbar-list li a {
+        display: flex !important;
+        padding: 10px 12px !important;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        font-size: 0.82rem !important;
+        font-weight: 700 !important;
+        text-align: center;
+    }
+
+    .grid-game-1, .grid-game-2 {
+        display: inline-flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    .main-game {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        margin-bottom: 32px !important;
+    }
+
+    .grid {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .card {
+        width: 300px;
+        height: auto;
+        min-height: 200px;
+        margin: 24px auto;
+    }
+
+    .natura-paradox > .card {
+        width: 82%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .content {
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+    }
+    .card > .content > .text-button-card > .button {
+        margin-bottom: 24px;
+        padding: 16px 24px;
+        font-size: 16px;
+    }
+
+    .text-button-card {
+        padding: 20px;
+        order: 2;
+    }
+
+    .text-button-card > h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .game-image-card {
+        height: 180px;
+        max-height: 227px;
+        aspect-ratio: 1 / 1;
+        width: 100%;
+        border-left: none;
+        border-bottom: 3px solid #000000;
+        box-shadow: 0 4px 0 #000;
+        order: 1;
+    }
+
+    .card-update {
+        width: 92%;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 430px) {
+    .banner {
         padding:80px 12px 32px 12px;
     }
 
@@ -549,8 +672,14 @@ a.pstat:hover .psv {
     }
 
     .main-game, .grid-game-1, .grid-game-2 {
+        display: flex;
         flex-direction: column;
         gap: 4px;
+    }
+
+    .main-game {
+        width: 100% !important;
+        margin-bottom: 32px !important;
     }
 
     .grid {
