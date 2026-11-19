@@ -124,12 +124,12 @@ ul.navbar-list li a:active {
 }
 
 .grid-game-1 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     gap: 64px;
 }
 .grid-game-2 {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     gap: 64px;
 }
@@ -152,67 +152,18 @@ ul.navbar-list li a:active {
     box-shadow: 12px 12px 0 #000000;
     overflow: hidden;
     transition: all 0.3s ease;
-}
-.pilah-sampah > .card {
-    background: rgb(68, 255, 68);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 0.5em 0.5em;
-    color: #000;
-}
-.dysvotepia > .card {
-    background: #ff204e;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 3px, transparent 1px);
     background-size: 0.5em 0.5em;
     color: #ffffff;
 }
-.memorale > .card {
-    background: #ffc368;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 0.5em 0.5em;
-    color: #000000;
-}
 
-.a-quite-drive > .card {
-    background: #1a6aff;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-    background-size: 0.5em 0.5em;
-    color: #ffffff;
-}
-
-.a-quite-drive > .card > .content > .text-button-card > .button {
-    color: #ffffff;
-    background: #1a6aff;
-    font-size: 14px;
-    margin-bottom: 12px;
-    font-weight: 400;
-}
-
-.dysvotepia > .card > .content > .text-button-card > .button {
-    color: #ffffff;
-    background: #ff204e;
-    font-size: 14px;
-    margin-bottom: 12px;
-    font-weight: 400;
-}
-
-.memorale > .card > .content > .text-button-card > .button {
+.card > .content > .text-button-card > .button {
     color: #000;
-    background: #ffc368;
+    background: #f0f0f0;
     font-size: 14px;
     margin-bottom: 12px;
-    font-weight: 400;
-}
-
-.pilah-sampah > .card > .content > .text-button-card > .button {
-    color: #000;
-    background: rgb(68, 255, 68);
-    font-size: 14px;
-    margin-bottom: 12px;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .head {
@@ -226,7 +177,6 @@ ul.navbar-list li a:active {
     box-sizing: border-box;
     color: #000000;
     border-bottom: 3px solid #000000;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -243,42 +193,13 @@ ul.navbar-list li a:active {
     gap: 20px;
     height: 250px;
 }
-.genre-pilah-sampah {
-    color: rgb(47, 175, 47);
-}
 
-.subtext-pilah-sampah {
-    color: rgb(35, 128, 35);
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.genre-dysvotepia {
+.genre {
     color: #ff98ad;
 }
 
-.subtext-dysvotepia {
+.subtext {
     color: #ffc6d1;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.genre-memorale {
-    color: #ac8448;
-}
-
-.subtext-memorale {
-    color: #886839;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.genre-a-quite-drive {
-    color: #5e95fc;
-}
-
-.subtext-a-quite-drive {
-    color: #8ab3ff;
     font-size: 14px;
     font-weight: 400;
 }
@@ -329,38 +250,14 @@ ul.navbar-list li a:active {
     margin-top: 12px;
 }
 
-.button:hover {
-    translate: 1.5px 1.5px;
-    box-shadow: 1.5px 1.5px 0 #000000;
-    background: #1a6aff;
-}
-
 .button:active {
     translate: 3px 3px;
     box-shadow: 0 0 0 #000000;
 }
 
-.dysvotepia > .card > .content > .text-button-card > .button:hover {
+.card > .content > .text-button-card > .button:hover {
     background: #000000;
     color: #ff204e;
-    font-weight: 600;
-}
-
-.memorale > .card > .content > .text-button-card > .button:hover {
-    background: #000000;
-    color: #ffc368;
-    font-weight: 600;
-}
-
-.a-quite-drive > .card > .content > .text-button-card > .button:hover {
-    background: #000000;
-    color: #1a6aff;
-    font-weight: 600;
-}
-
-.pilah-sampah > .card > .content > .text-button-card > .button:hover {
-    background: #000000;
-    color: rgb(68, 255, 68);
     font-weight: 600;
 }
 
@@ -588,7 +485,7 @@ a.pstat:hover .psv {
     border-left: 5px solid #ffc368;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1080px) {
     .banner {
         padding:80px 12px 32px 12px;
     }
@@ -649,8 +546,9 @@ a.pstat:hover .psv {
     }
     .card {
         width: 60% !important;
-        height: 480px;
+        height: 520px;
         margin: 24px auto;
+        min-width: 550px;
     }
 
     .content {
@@ -658,10 +556,20 @@ a.pstat:hover .psv {
         height: auto;
         gap: 0;
     }
+    .card > .content > .text-button-card > .button {
+        margin-bottom: 24px;
+        padding: 16px 24px;
+        font-size: 16px;
+    }
 
     .text-button-card {
         padding: 20px;
         order: 2;
+    }
+
+    .text-button-card > h1 {
+        font-size: 48px;
+        margin-bottom: 8px;
     }
 
     .game-image-card {
