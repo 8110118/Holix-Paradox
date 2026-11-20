@@ -96,7 +96,7 @@ ul.navbar-list li a {
     font-size: 0.9rem;
     font-weight: 600;
     color: #fff;
-    background-color: #ff204e;
+    background-color: #3F5D67;
     border: 3px solid #000;
     box-shadow: 4px 4px 0 #000000;
     transition: all 0.2s ease;
@@ -107,7 +107,7 @@ ul.navbar-list li a:hover {
     translate: 1.5px 1.5px;
     box-shadow: 1.5px 1.5px 0 #000000;
     background-color: #000;
-    color: #ff204e;
+    color: #f0f0f0;
     border: 3px solid #000;
 }
 
@@ -116,15 +116,37 @@ ul.navbar-list li a:active {
     box-shadow: 0 0 0 #000000;
 }
 
-.future {
+.future, .future-2, .future-3, .future-4 {
     font-family: "Cascadia Code", monospace;
     font-size: 1.5rem;
-    margin-top: 64px;
-    margin-bottom: 12px;
+    color: #000;
+    margin: 64px auto 12px auto;
+    padding: 12px 0px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0 #000000;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px) 0% 0% / 0.5em 0.5em, linear-gradient(rgba(0, 0, 0, 0.05) 3px, transparent 1px) #f0f0f0;;
 }
+.future {
+    width: 700px;
+}
+
+.future-2 {
+    width: 900px;
+    margin-top: 0px;
+}
+
+.future-3 {
+    width: 680px;
+}
+
+.future-4 {
+    width: 320px;
+    margin-bottom: 0px;
+}
+
 .main-game {
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 64px;
     width: 1000px;
 }
@@ -153,7 +175,7 @@ ul.navbar-list li a:active {
     height: 280px;
     margin: 32px auto;
     translate: -6px -6px;
-    background: #ff204e;
+    background: #3F5D67;
     border: 3px solid #000000;
     box-shadow: 12px 12px 0 #000000;
     overflow: hidden;
@@ -181,6 +203,10 @@ ul.navbar-list li a:active {
     font-size: 14px;
     margin-bottom: 12px;
     font-weight: 900;
+}
+.main-game > .natura-paradox > .card > .content > .text-button-card > .button {
+    padding: 12px 12px;
+    font-size: 24px;
 }
 
 .head {
@@ -212,11 +238,11 @@ ul.navbar-list li a:active {
 }
 
 .genre {
-    color: #ff98ad;
+    color: #6c97a5;
 }
 
 .subtext {
-    color: #ffc6d1;
+    color: #85a9b6;
     font-size: 14px;
     font-weight: 400;
 }
@@ -273,7 +299,7 @@ ul.navbar-list li a:active {
     border: 3px solid #000000;
     box-shadow: 3px 3px 0 #000000;
     font-weight: 750;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px) 0% 0% / 0.5em 0.5em, linear-gradient(rgba(0, 0, 0, 0.05) 3px, transparent 1px) #f0f0f0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px) 0% 0% / 0.5em 0.5em, linear-gradient(rgba(0, 0, 0, 0.05) 3px, transparent 1px) #f0f0f0;
     transition: all 0.3s ease;
     cursor: pointer;
     margin-top: 12px;
@@ -286,7 +312,7 @@ ul.navbar-list li a:active {
 
 .card > .content > .text-button-card > .button:hover {
     background: #000000;
-    color: #ff204e;
+    color: #f0f0f0;
     font-weight: 600;
 }
 
@@ -308,14 +334,19 @@ a:link {
     cursor: pointer;
 }
 
+.dev-log {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
 .card-update {
     background: #f5f5f0;
     border: 5px solid #0a0a0a;
     box-shadow: 8px 8px 0 #0a0a0a;
     position: relative;
     overflow: hidden;
-    width: 92%;
-    transform: scale(0.8);
+    width: 800px;
     margin: 0 auto;
     transition: all 0.3s ease;
 }
@@ -326,7 +357,7 @@ a:link {
 
 .update-photo {
     height: 160px;
-    background: #ff204e;
+    background: #3F5D67;
     border-bottom: 5px solid #0a0a0a;
     position: relative;
     overflow: hidden;
@@ -374,7 +405,7 @@ a:link {
     justify-content: center;
     font-family: Cascadia code;
     font-size: 3rem;
-    color: #ff204e;
+    color: #3F5D67;
     flex-shrink: 0;
 }
 
@@ -424,7 +455,7 @@ a:link {
     font-size: 1rem;
     font-family: Cascadia code;;
     color: #464646;
-    border-left: 5px solid #ff204e;
+    border-left: 5px solid #3F5D67;
     padding-left: 10px;
     line-height: 1.55;
     margin-bottom: 14px;
@@ -450,7 +481,7 @@ a.pstat {
     justify-content: center;
     transition: background-color 0.2s ease, color 0.2s ease;
     cursor: pointer;
-    background-color: #ff204e;
+    background-color: #3F5D67;
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -460,7 +491,7 @@ a.pstat:hover {
 }
 
 a.pstat:hover .psv {
-    color: #ff204e;
+    color: #3F5D67;
 }
 
 .pstat:last-child {
@@ -574,6 +605,27 @@ a.pstat:hover .psv {
     .grid {
         flex-direction: column;
         gap: 24px;
+    }
+    .future, .future-1, .future-2, .future-3, .future-4 {
+        font-size: 18px;
+    }
+    .future {
+        width: 540px;
+    }
+
+    .future-1 {
+        width: 540px;
+    }
+
+    .future-2 {
+        width: 700px;
+    }
+
+    .future-3 {
+        width: 540px;
+    }
+    .future-4 {
+        width: 250px;
     }
 
     .card {
@@ -755,7 +807,7 @@ a.pstat:hover .psv {
 
 .input__container:hover {
     transform: rotateX(5deg) rotateY(1 deg) scale(1.05);
-    box-shadow: 25px 25px 0 -5px #ff204e, 25px 25px 0 0 #000;
+    box-shadow: 25px 25px 0 -5px #3F5D67, 25px 25px 0 0 #000;
 }
 
 .shadow__input {
@@ -778,7 +830,7 @@ a.pstat:hover .psv {
 .input__button__shadow {
     cursor: pointer;
     border: 3px solid #000;
-    background: #ff204e;
+    background: #3F5D67;
     transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
     display: flex;
     justify-content: center;
@@ -792,7 +844,7 @@ a.pstat:hover .psv {
 }
 
 .input__button__shadow:hover {
-    background: #ff204e;
+    background: #3F5D67;
     transform: translateZ(10px) translateX(-5px) translateY(-5px);
     box-shadow: 5px 5px 0 0 #000;
 }
@@ -837,7 +889,7 @@ a.pstat:hover .psv {
     font-family: Cascadia code;
     top: -15px;
     left: 20px;
-    background: #ff204e;
+    background: #3F5D67;
     color: #FFF;
     font-weight: bold;
     padding: 5px 10px;
