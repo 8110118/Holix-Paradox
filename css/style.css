@@ -95,7 +95,7 @@ ul.navbar-list li a {
     font-family: "Cascadia Code", monospace;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #fff;
+    color: #f5f5f0;
     background-color: #3F5D67;
     border: 3px solid #000;
     box-shadow: 4px 4px 0 #000000;
@@ -148,6 +148,9 @@ ul.navbar-list li a:active {
 .future-5 {
     width: 200px;
     margin-top: 0px;
+    background-color: #3F5D67;
+    color: #f5f5f0;
+    transition: all 0.3s ease;
 }
 
 .subtext-future {
@@ -195,7 +198,7 @@ ul.navbar-list li a:active {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 3px, transparent 1px);
     background-size: 0.5em 0.5em;
-    color: #ffffff;
+    color: #f5f5f0;
 }
 
 .natura-paradox > .card {
@@ -277,6 +280,7 @@ ul.navbar-list li a:active {
     font-size: 1.5rem;
     margin-bottom: 8px;
     font-weight: 900;
+    color: #f5f5f0
 }
 
 .natura-paradox > .card > .content > .text-button-card > h1 {
@@ -284,6 +288,7 @@ ul.navbar-list li a:active {
     font-size: 48px;
     font-weight: 900;
     margin-bottom: 12px;
+    color: #f5f5f0;
 }
 
 .game-image-card {
@@ -417,7 +422,7 @@ a:link {
     justify-content: center;
     font-family: Cascadia code;
     font-size: 3rem;
-    color: #3F5D67;
+    color: #f5f5f0;
     flex-shrink: 0;
 }
 
@@ -494,12 +499,16 @@ a.pstat {
     transition: background-color 0.2s ease, color 0.2s ease;
     cursor: pointer;
     background-color: #3F5D67;
-    color: #fff;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 3px, transparent 1px);
+    background-size: 0.5em 0.5em;
+    color: #f5f5f0;
     transition: all 0.3s ease;
 }
 
 a.pstat:hover {
     background-color: #000;
+    font-weight: 900;
 }
 
 a.pstat:hover .psv {
@@ -519,6 +528,11 @@ a.pstat:hover .psv {
     text-decoration: none;
     padding: 12px 0;
 }
+
+a > .psv {
+    color: #f5f5f0 !important;
+}
+
 .pstat .psl {
     font-size: 0.48rem;
     font-weight: 700;
@@ -529,32 +543,12 @@ a.pstat:hover .psv {
     margin-top: 2px;
 }
 
-.memorale-update > .card-update > .update-photo {
-    background-color: #ffc368;
-}
-
-.memorale-update > .card-update > .update-photo > .update-avatar {
-    color: #ffc368;
-}
-
-.memorale-update > .card-update > .update-stats > a.pstat {
-    background-color: #ffc368;
-    color:#000;
-}
-
-.memorale-update > .card-update > .update-stats > a.pstat .psv {
-    color: #000;
-}
-
-.memorale-update > .card-update > .update-stats > a.pstat:hover {
+.future-5:hover {
     background-color: #000;
-}
-
-.memorale-update > .card-update > .update-stats > a.pstat:hover .psv {
-    color: #ffc368;
-}
-.memorale-update > .card-update > .update-body > .update-bio {
-    border-left: 5px solid #ffc368;
+    font-weight: 900;
+    color: #f5f5f0;
+    translate: 6px 6px;
+    transition: all 0.3s ease;
 }
 
 @media (max-width: 1080px) {
@@ -693,7 +687,8 @@ a.pstat:hover .psv {
     }
 
     .card-update {
-        width: 92%;
+        width: 82%;
+        min-width: 720px;
         transform: scale(1);
     }
 }
@@ -866,7 +861,7 @@ a.pstat:hover .psv {
 }
 
 .input__button__shadow svg {
-    fill: #FFF;
+    fill: #f5f5f0;
     width: 25px;
     height: 25px;
 }
@@ -877,7 +872,7 @@ a.pstat:hover .psv {
     border: 3px solid #000;
     padding: 15px;
     font-size: 18px;
-    background: #fff;
+    background: #f5f5f0;
     color: #000;
     transform: translateZ(10px);
     transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -906,7 +901,7 @@ a.pstat:hover .psv {
     top: -15px;
     left: 20px;
     background: #3F5D67;
-    color: #FFF;
+    color: #f5f5f0;
     font-weight: bold;
     padding: 5px 10px;
     font-size: 14px;
@@ -915,3 +910,15 @@ a.pstat:hover .psv {
     border: 2px solid #000;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 64px;
+}
+
+.studio-name {
+    font-family: Cascadia Code;
+}
