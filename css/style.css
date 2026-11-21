@@ -94,7 +94,6 @@ ul.navbar-list li a {
     text-decoration: none;
     font-family: "Cascadia Code", monospace;
     font-size: 0.9rem;
-    font-weight: 600;
     color: #f5f5f0;
     background-color: #3F5D67;
     border: 3px solid #000;
@@ -592,7 +591,6 @@ a > .psv {
         width: 100% !important;
         box-sizing: border-box !important;
         font-size: 0.82rem !important;
-        font-weight: 700 !important;
         text-align: center;
     }
 
@@ -695,7 +693,7 @@ a > .psv {
 
 @media (max-width: 430px) {
     .banner {
-        padding: 80px 16px 16px 16px;
+        padding: 80px 64px 48px 64px;
     }
 
     .banner img {
@@ -734,7 +732,6 @@ a > .psv {
         width: 100% !important;
         box-sizing: border-box !important;
         font-size: 0.82rem !important;
-        font-weight: 700 !important;
         text-align: center;
     }
 
@@ -742,9 +739,9 @@ a > .psv {
         max-width: 360px;
     }  
     .grid-game-1, .grid-game-2 {
-        display: inline-flex;
-        flex-direction: row;
-        gap: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
     }
     .main-game {
         display: flex;
@@ -788,7 +785,7 @@ a > .psv {
         height: auto;
         min-height: 80px;
         margin: 24px auto;
-        max-width: 150px;
+        max-width: 250px;
     }
 
     .natura-paradox > .card {
@@ -798,16 +795,38 @@ a > .psv {
         height: auto;
         min-height: 200px;
     }
+    .natura-paradox > .card > .content > .text-button-card {
+        padding-left: 20px;
+    }
+
+    .main-game > .natura-paradox > .card > .content > .text-button-card > .button {
+        font-size: 16px;
+    }
+
+    .head {
+        height: 18px;
+        font-size: 8px;
+        padding: 0px 8px;
+    }
 
     .content {
         flex-direction: column;
         height: auto;
         gap: 0;
     }
+
+    .genre {
+        font-size: 8px;
+    }
+
+    .subtext {
+        font-size: 12px;
+    }
+
     .card > .content > .text-button-card > .button {
-        margin-bottom: 12px;
-        padding: 16px 24px;
-        font-size: 16px;
+        margin-bottom: 4px;
+        padding: 8px 12px;
+        font-size: 12px;
     }
 
     .text-button-card {
