@@ -116,7 +116,7 @@ ul.navbar-list li a:active {
     box-shadow: 0 0 0 #000000;
 }
 
-.future, .future-2, .future-3, .future-4 {
+.future, .future-2, .future-3, .future-4, .future-5 {
     font-family: "Cascadia Code", monospace;
     font-size: 1.5rem;
     color: #000;
@@ -137,11 +137,23 @@ ul.navbar-list li a:active {
 
 .future-3 {
     width: 680px;
+    margin-top: 64px;
 }
 
 .future-4 {
     width: 320px;
-    margin-bottom: 0px;
+    margin-top: 64px;
+}
+
+.future-5 {
+    width: 200px;
+    margin-top: 0px;
+}
+
+.subtext-future {
+    margin-top: 8px;
+    color: #8a8a8a;
+    font-size: 18px;
 }
 
 .main-game {
@@ -626,6 +638,10 @@ a.pstat:hover .psv {
     }
     .future-4 {
         width: 250px;
+    }
+
+    .subtext-future {
+        font-size: 16px;
     }
 
     .card {
