@@ -550,6 +550,129 @@ a > .psv {
     transition: all 0.3s ease;
 }
 
+.input__container {
+    position: relative;
+    background: #f5f5f0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    border: 3px solid #000;
+    max-width: 350px;
+    transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: 10px 10px 0 #000;
+}
+
+.input__container:hover {
+    transform: rotateX(5deg) rotateY(1 deg) scale(1.05);
+    box-shadow: 25px 25px 0 -5px #3F5D67, 25px 25px 0 0 #000;
+}
+
+.shadow__input {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: translateZ(-50px);
+    background: linear-gradient(
+        45deg,
+        rgba(255, 107, 107, 0.4) 0%,
+        rgba(255, 107, 107, 0.1) 100%
+    );
+    filter: blur(20px);
+}
+
+.input__button__shadow {
+    cursor: pointer;
+    border: 3px solid #000;
+    background: #3F5D67;
+    transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transform: translateZ(20px);
+    position: relative;
+    z-index: 3;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input__button__shadow:hover {
+    background: #3F5D67;
+    transform: translateZ(10px) translateX(-5px) translateY(-5px);
+    box-shadow: 5px 5px 0 0 #000;
+}
+
+.input__button__shadow svg {
+    fill: #f5f5f0;
+    width: 25px;
+    height: 25px;
+}
+
+.input__search {
+    width: 100%;
+    outline: none;
+    border: 3px solid #000;
+    padding: 15px;
+    font-size: 18px;
+    background: #f5f5f0;
+    color: #000;
+    transform: translateZ(10px);
+    transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    z-index: 3;
+    font-family: Cascadia code;
+    letter-spacing: -0.5px;
+}
+
+.input__search::placeholder {
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.input__search:hover, .input__search:focus {
+    background: #f5f5f0;
+    transform: translateZ(20px) translateX(-5px) translateY(-5px);
+    box-shadow: 5px 5px 0 0 #000;
+}
+
+.input__container::before {
+    content: "SEARCH";
+    position: absolute;
+    font-family: Cascadia code;
+    top: -15px;
+    left: 20px;
+    background: #3F5D67;
+    color: #f5f5f0;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 14px;
+    transform: translateZ(50px);
+    z-index: 4;
+    border: 2px solid #000;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 64px;
+}
+
+.studio-name {
+    font-family: Cascadia Code;
+}
+
 @media (max-width: 1080px) {
     .banner {
         padding: 80px 16px 16px 16px;
@@ -706,6 +829,11 @@ a > .psv {
         line-height: 1.4;
     }
 
+    section.navbar {
+        margin-bottom: 48px;
+        top: 64px;
+    }
+
     .navbar-container {
         width: 100%;
         max-width: 100% !important;
@@ -735,8 +863,12 @@ a > .psv {
         text-align: center;
     }
 
+    .input__container {
+        max-width: 300px;
+    }
+
     .main, .footer {
-        max-width: 360px;
+        max-width: 100%;
     }  
     .grid-game-1, .grid-game-2 {
         display: flex;
@@ -773,7 +905,8 @@ a > .psv {
         width: 320px;
     }
     .future-4 {
-        width: 100px;
+        width: 300px;
+        font-size: 16px;
     }
 
     .subtext-future {
@@ -858,127 +991,4 @@ a > .psv {
         min-width: 300px;
         transform: scale(1);
     }
-}
-
-.input__container {
-    position: relative;
-    background: #f5f5f0;
-    padding: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    border: 4px solid #000;
-    max-width: 350px;
-    transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    box-shadow: 10px 10px 0 #000;
-}
-
-.input__container:hover {
-    transform: rotateX(5deg) rotateY(1 deg) scale(1.05);
-    box-shadow: 25px 25px 0 -5px #3F5D67, 25px 25px 0 0 #000;
-}
-
-.shadow__input {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transform: translateZ(-50px);
-    background: linear-gradient(
-        45deg,
-        rgba(255, 107, 107, 0.4) 0%,
-        rgba(255, 107, 107, 0.1) 100%
-    );
-    filter: blur(20px);
-}
-
-.input__button__shadow {
-    cursor: pointer;
-    border: 3px solid #000;
-    background: #3F5D67;
-    transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    transform: translateZ(20px);
-    position: relative;
-    z-index: 3;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.input__button__shadow:hover {
-    background: #3F5D67;
-    transform: translateZ(10px) translateX(-5px) translateY(-5px);
-    box-shadow: 5px 5px 0 0 #000;
-}
-
-.input__button__shadow svg {
-    fill: #f5f5f0;
-    width: 25px;
-    height: 25px;
-}
-
-.input__search {
-    width: 100%;
-    outline: none;
-    border: 3px solid #000;
-    padding: 15px;
-    font-size: 18px;
-    background: #f5f5f0;
-    color: #000;
-    transform: translateZ(10px);
-    transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    position: relative;
-    z-index: 3;
-    font-family: Cascadia code;
-    letter-spacing: -0.5px;
-}
-
-.input__search::placeholder {
-    color: #666;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.input__search:hover, .input__search:focus {
-    background: #f5f5f0;
-    transform: translateZ(20px) translateX(-5px) translateY(-5px);
-    box-shadow: 5px 5px 0 0 #000;
-}
-
-.input__container::before {
-    content: "SEARCH";
-    position: absolute;
-    font-family: Cascadia code;
-    top: -15px;
-    left: 20px;
-    background: #3F5D67;
-    color: #f5f5f0;
-    font-weight: bold;
-    padding: 5px 10px;
-    font-size: 14px;
-    transform: translateZ(50px);
-    z-index: 4;
-    border: 2px solid #000;
-}
-
-.footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 10vh;
-    margin-top: 64px;
-}
-
-.studio-name {
-    font-family: Cascadia Code;
 }
