@@ -991,4 +991,30 @@ a > .psv {
         min-width: 300px;
         transform: scale(1);
     }
+
+    .update-photo {
+        height: 80px;
+    }
+
+    .update-avatar {
+        font-size: 24px;
+        height: 32px;
+    }
+
+    .update-name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .text-news {
+        font-size: 12px;
+    }
+
+    .pstat .psv {
+        font-size: 12px;
+    }
+    
+    .pstat {
+        padding: 0px;
+    }
 }
