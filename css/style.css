@@ -455,6 +455,7 @@ a:link {
     color: #a8a49a;
     text-transform: uppercase;
     margin-bottom: 2px;
+    font-family: Cascadia Code;
 }
 
 .update-name {
@@ -467,6 +468,7 @@ a:link {
     margin-bottom: 10px;
     line-height: 50px;
 }
+
 .update-bio {
     font-size: 1rem;
     font-family: Cascadia code;;
@@ -887,7 +889,8 @@ a > .psv {
         gap: 24px;
     }
     .future, .future-1, .future-2, .future-3, .future-4 {
-        font-size: 8px;
+        font-size: 16px;
+        padding: 10px;
     }
     .future {
         width: 320px;
